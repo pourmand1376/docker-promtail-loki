@@ -9,10 +9,10 @@ x-logging:
     tag: "{{.Name}}"
 
 volumes:
-  - loki:
-  - promtail:
-  - grafana:
-  - grafana-provisioning:
+  loki:
+  promtail:
+  grafana:
+  grafana-provisioning:
 
 services:
   nginx-app:
