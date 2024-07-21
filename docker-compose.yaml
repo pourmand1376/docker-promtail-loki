@@ -42,6 +42,7 @@ services:
     environment:
       - GF_FEATURE_TOGGLES_ENABLE=accessControlOnCall lokiLogsDataplane
       - GF_INSTALL_PLUGINS=https://storage.googleapis.com/integration-artifacts/grafana-lokiexplore-app/grafana-lokiexplore-app-latest.zip;grafana-lokiexplore-app
+      - GF_SERVER_ROOT_URL=http://grafana.onecliq.io
     networks:
       - app
     logging: *default-logging
