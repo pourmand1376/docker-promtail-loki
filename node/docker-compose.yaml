@@ -25,8 +25,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - promtail:/etc/promtail
     command: -config.file=/etc/promtail/docker-config.yaml
-    depends_on:
-      - loki
     networks:
       - loki
     logging: *default-logging
