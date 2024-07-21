@@ -50,3 +50,7 @@ ruler:
 
 analytics:
   reporting_enabled: false
+
+table_manager:
+  retention_deletes_enabled: true # true so that storage is limited
+  retention_period: 2160h #3 months

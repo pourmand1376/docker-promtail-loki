@@ -33,7 +33,7 @@ services:
     container_name: grafana
     restart: unless-stopped
     ports:
-      - 3000:3000
+      - 3010:3000
     volumes:
       - ./config/grafana/datasources/grafana.yaml:/etc/grafana/provisioning/datasources/datasources.yaml
       - ./config/grafana/plugins/app.yaml:/etc/grafana/provisioning/plugins/app.yaml
