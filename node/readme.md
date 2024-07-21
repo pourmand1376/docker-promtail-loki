@@ -12,7 +12,7 @@ https://grafana.com/docs/loki/latest/send-data/docker-driver/configuration/
 
 add this to daemon.json:
 
-```
+```json
 {
     "debug" : true,
     "log-driver": "loki",
@@ -24,3 +24,7 @@ add this to daemon.json:
 ```
 
 After that restart docker service. 
+
+```bash
+docker-compose up -d --force-recreate
+```
