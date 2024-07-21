@@ -1,6 +1,8 @@
-# Set Node 
+# Setting up nodes to connect to existing grafana and loki 
 
 Change Loki:3100 to IP:port of the serve in `promtail.yaml`. 
+
+Do `docker compose up -d` only in `node` folder (not the main docker-compose file).
 
 # install docker compose plugin
 
