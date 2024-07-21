@@ -26,5 +26,5 @@ add this to daemon.json:
 After that restart docker service. 
 
 ```bash
-docker-compose up -d --force-recreate
+docker compose up -d --force-recreate
 ```
