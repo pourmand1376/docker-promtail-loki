@@ -25,7 +25,7 @@ services:
     ports:
       - 8080:80
     networks:
-      - app
+      - loki
     logging: *default-logging
 
   grafana:
@@ -44,7 +44,7 @@ services:
       - GF_INSTALL_PLUGINS=https://storage.googleapis.com/integration-artifacts/grafana-lokiexplore-app/grafana-lokiexplore-app-latest.zip;grafana-lokiexplore-app
       - GF_SERVER_ROOT_URL=http://grafana.onecliq.io
     networks:
-      - app
+      - loki
     logging: *default-logging
 
   loki:
@@ -59,7 +59,7 @@ services:
       - loki:/etc/loki
 
     networks:
-      - app
+      - loki
     logging: *default-logging
 
   promtail:
@@ -75,7 +75,7 @@ services:
     depends_on:
       - loki
     networks:
-      - app
+      - loki
     logging: *default-logging
 
   log-generator:
@@ -86,9 +86,9 @@ services:
     depends_on:
       - loki
     networks:
-      - app
+      - loki
     logging: *default-logging
 
 networks:
-  app:
-    name: app
+  loki:
+    name: loki
