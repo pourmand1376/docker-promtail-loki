@@ -51,6 +51,15 @@ ruler:
 analytics:
   reporting_enabled: false
 
+compactor:
+  working_directory: /tmp/loki/boltdb-shipper-compactor
+  shared_store: filesystem
+  compaction_interval: 10m
+  retention_enabled: true
+  retention_delete_delay: 2h
+  retention_delete_worker_count: 150
+
+
 table_manager:
   retention_deletes_enabled: true # true so that storage is limited
-  retention_period: 2160h #3 months
+  retention_period: 300h
