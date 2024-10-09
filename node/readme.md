@@ -17,7 +17,7 @@ add this to daemon.json:
     "debug" : true,
     "log-driver": "loki",
     "log-opts": {
-        "loki-url": "https://ip:port/loki/api/v1/push",
+        "loki-url": "http://ip:port/loki/api/v1/push",
         "loki-batch-size": "400"
     }
 }
