@@ -67,3 +67,4 @@ As well as patterns:
 
 For more information about exploring logs without LogQL, view Grafana's blog post:
 - [Find your logs data with Explore Logs: No LogQL required!](https://grafana.com/blog/2024/04/09/find-your-logs-data-with-explore-logs-no-logql-required/)
+- https://grafana.com/docs/loki/latest/operations/storage/retention/
