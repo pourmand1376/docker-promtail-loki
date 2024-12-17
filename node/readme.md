@@ -22,8 +22,23 @@ add this to daemon.json:
     }
 }
 ```
+like:
+```json
+{
+    "debug" : true,
+    "log-driver": "loki",
+    "log-opts": {
+        "loki-url": "http://20.220.56.217:3100/loki/api/v1/push",
+        "loki-batch-size": "400"
+    }
+}
+```
 
 After that restart docker service. 
+
+```bash
+sudo systemctl restart docker
+```
 
 ```bash
 docker compose up -d --force-recreate
