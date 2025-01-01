@@ -10,6 +10,10 @@ https://grafana.com/docs/loki/latest/send-data/docker-driver/
 
 https://grafana.com/docs/loki/latest/send-data/docker-driver/configuration/
 
+```
+docker plugin install grafana/loki-docker-driver:latest --alias loki
+```
+
 add this to daemon.json:
 
 ```json
